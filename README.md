@@ -29,14 +29,14 @@ paddery.pad("lr", "=", 2, "bird");
 // returns: "==bird=="
 
 // 🛡️ built-in error handling
-padder.pad("up", "+", 2, "cat"); 
+paddery.pad("up", "+", 2, "cat"); 
 // returns: "The direction set is invalid! ('left', 'right' or 'lr')"
 
-padder.pad("left", "+", -5, "cat"); 
+paddery.pad("left", "+", -5, "cat"); 
 // returns: "Invalid timesToPad!"
 
 // custom padding in both directions! including rounding for timeToPad!
-padder.pad_c({
+paddery.pad_c({
     "left": {
         "char": "%",
         "timesToPad": 3
