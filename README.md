@@ -13,8 +13,12 @@ npm install paddery
 import it, instantiate it, pad it. it's that simple.
 
 ```javascript
+// commonjs
 const Paddery = require('paddery');
 const paddery = new Paddery();
+
+// or esm
+import Paddery from 'paddery';
 
 // 🡸 pad left
 paddery.pad("left", "+", 4, "cat"); 

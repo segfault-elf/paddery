@@ -1,6 +1,6 @@
 {
   "name": "paddery",
-  "version": "1.0.2",
+  "version": "1.1.1",
   "description": "Pads text left or right, using user selected characters and user selected amount of times to pad.",
   "keywords": [
     "pad",
@@ -19,8 +19,12 @@
   "license": "MIT",
   "author": "segfault.elf",
   "type": "commonjs",
+  "exports": {
+    "require": "./main.js",
+    "import": "./main.mjs"
+  },
   "main": "main.js",
   "scripts": {
-    "test": "node tests.js"
+    "test": "node ./tests/tests.js"
   }
 }
