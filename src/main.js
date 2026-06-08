@@ -1,20 +1,14 @@
-PS C:\Users\tudor\Downloads\padder> cat main.js
 class Paddery {
-
+    
     pad(direction, charToPad, timesToPad, stringToAdd) {
-        if (!(direction == "left" && direction == "right" && direction == "lr")) {
+
+        timesToPad = Math.round(timesToPad);
+        
+        if (direction !== "left" && direction !== "right" && direction !== "lr") {
             return "The direction set is invalid! ('left', 'right' or 'lr')";
         }
 
-        if (stringToAdd == "Invalid timesToPad!") {
-            return "Invalid stringToAdd!";
-        }
-
-        if (timesToPad == null) {
-            return "Invalid timesToPad!";
-        }
-
-        if (timesToPad < 0) {
+        if (timesToPad == null || timesToPad < 0) {
             return "Invalid timesToPad!";
         }
 
@@ -32,6 +26,16 @@ class Paddery {
             let x = charToPad.repeat(timesToPad) + stringToAdd + charToPad.repeat(timesToPad)
             return x;
         }
+    }
+
+    pad_c(config, stringToAdd) {
+        let leftchar = config.left.char;
+        let leftTimesToPad = Math.round(config.left.timesToPad);
+        let rightchar = config.right.char;
+        let rightTimesToPad = Math.round(config.right.timesToPad);
+
+        let x = leftchar.repeat(leftTimesToPad) + stringToAdd + rightchar.repeat(rightTimesToPad);
+        return x;
     }
 }
 
