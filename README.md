@@ -49,3 +49,5 @@ padder.pad("left", "+", -5, "cat");
 ## 📜 license
 
 mit. do whatever you want with it, just don't blame me if you pad too hard. 
+
+[![Known Vulnerabilities](https://snyk.io/test/npm/paddery/badge.svg)](https://snyk.io/test/npm/paddery)
