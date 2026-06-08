@@ -1,0 +1,15 @@
+{
+  "name": "paddery",
+  "version": "1.0.1",
+  "description": "Pads text left or right, using user selected characters and user selected amount of times to pad.",
+  "keywords": [
+    "pad"
+  ],
+  "license": "MIT",
+  "author": "segfault.elf",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
