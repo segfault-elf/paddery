@@ -34,6 +34,18 @@ padder.pad("up", "+", 2, "cat");
 
 padder.pad("left", "+", -5, "cat"); 
 // returns: "Invalid timesToPad!"
+
+// custom padding in both directions! including rounding for timeToPad!
+padder.pad_c({
+    "left": {
+        "char": "%",
+        "timesToPad": 3
+    },
+    "right": {
+        "char" "("
+        "timeToPad": 4.5
+    }}, "cat")
+// returns: "%%%cat((((("
 ```
 
 ## 🧠 API Reference
@@ -44,10 +56,9 @@ padder.pad("left", "+", -5, "cat");
 | `charToPad`   | `string` | The character(s) to repeat (e.g. `" "`, `"0"`, `"+"`). |
 | `timesToPad`  | `number` | Number of times to repeat the character. Must be `>= 0`. |
 | `stringToAdd` | `string` | The original string to pad. |
+| `config`      | `string` | JSON including the config for `pad_c` |
 
 
 ## 📜 license
 
 mit. do whatever you want with it, just don't blame me if you pad too hard. 
-
-[![Known Vulnerabilities](https://snyk.io/test/npm/paddery/badge.svg)](https://snyk.io/test/npm/paddery)
